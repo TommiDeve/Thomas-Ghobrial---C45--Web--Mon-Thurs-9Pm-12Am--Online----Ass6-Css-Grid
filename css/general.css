@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  img {
+    width: 100%;
+  }
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #9fa3a7;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 20px;
+  }
+  h3 {
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    line-height: 32px;
+  
+  }
+  h1 {
+    font-family: "Arvo", serif;
+    font-size: 10vw;
+    font-weight: 400;
+    color: #333333;
+    max-width: 550px;
+    margin: 20 0 10 0;
+  }
+  p,
+  a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9fa3a7;
+    line-height: 26px;
+    margin: 0;
+  }
+  
+  .item:not(.item1) a {
+    text-decoration: none;
+    margin-top: 20px;
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
