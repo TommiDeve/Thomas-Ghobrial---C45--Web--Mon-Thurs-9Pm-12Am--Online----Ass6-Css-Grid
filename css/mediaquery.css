@@ -3,15 +3,15 @@
         grid-template-rows: repeat(8, auto);
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-    
-                "item1 item1 "
-                "item2 item2 "
-                "item3 item4 "
-                "item5 item5 "
-                "item6 item8 "
-                "item7 item8 "
-                "item9 item9 "
-                "item10 item10 "
+
+            "item1 item1 "
+            "item2 item2 "
+            "item3 item4 "
+            "item5 item5 "
+            "item6 item8 "
+            "item7 item8 "
+            "item9 item9 "
+            "item10 item10 "
         ;
     }
 
@@ -23,21 +23,21 @@
     .item2 {
         flex-flow: row;
         justify-content: space-around;
-        /* align-items: start; */
+        padding-top: 0;
+
     }
-    .item2 img {
-        margin: 0;
-    }
+
+
 
     .item2 .item2Content {
         width: 32%;
     }
-    
+
     .item5 {
         flex-flow: row;
         justify-content: space-around;
         align-items: start;
-        padding-bottom: 0;  
+        padding-bottom: 0;
     }
 
     .item5 img {
@@ -60,35 +60,58 @@
         justify-content: space-between;
     }
 
-.item10{
-    flex-flow: row;
-    text-align: start;
+    .item10 {
+        flex-flow: row;
+        text-align: left;
+    }
 
-}
-
+    .item10 {
+        padding-bottom: 0;
+    }
 }
 
 
 
 @media screen and (min-width:991px) {
     .container {
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: 2fr 2fr 2fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-    
-                "item2 item2 item1 item1"
-                "item3 item5 item5 item8"
-                "item4 item7 item7 item8"
-                "item6 item9 item10 item10"
 
+            "item2 item2 item1 item1"
+            "item3 item5 item5 item8"
+            "item4 item7 item7 item8"
+            "item6 item9 item10 item10"
         ;
     }
 
     h1 {
         font-size: 48px;
     }
+
+    .item1 {
+        padding: 0;
+    }
+
+    .item2 img {
+        margin: 0;
+    }
+
+    .item3,
+    .item4 {
+        padding: 0;
+    }
+
     .item5 img {
         max-width: none;
     }
 
+    .item2 img {
+        align-self: flex-end;
+    }
+
+    .item4 h3 {
+        width: 54%;
+        margin: 10px 0 20px;
+    }
 }
